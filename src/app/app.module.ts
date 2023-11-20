@@ -7,17 +7,15 @@ import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { enviroments } from 'src/enviroments/enviroments';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
-import { WindowComponent } from '../pages/window/window.component';
+import { WindowComponent } from './window/window.component';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
-import { ListadoComponent } from '../pages/listado/listado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WindowComponent,
-    MenuComponent,
-    ListadoComponent
+    MenuComponent
   ],
   imports: [
     BrowserModule,

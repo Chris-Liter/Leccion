@@ -1,0 +1,20 @@
+    
+<div>
+    <form>
+        <label>Etiqueta</label>
+        <input title="etiqueta" id="etiqueta" name="etiqueta" [(ngModel)]="tarea.etiqueta">
+        <label>Nota</label>
+        <input title="nota" id="nota" name="nota" [(ngModel)]="tarea.nota">
+        <label>Fecha</label>
+        <input title="fecha" id="fecha" name="fecha" [(ngModel)]="tarea.fecha">
+        <button type="button" (click)="save()">Guardar</button>
+        <button type="button" (click)="edit()">Editar</button>
+    </form> 
+    <div>
+        <ul>
+          <li *ngFor="let i of tareas">
+            <a (click)="selected(i)">{{i.etiqueta}}, {{i.nota}}</a>
+          </li>
+        </ul>
+      </div>
+</div>
